@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<title>Easywire</title>
+</head>
+<body class="bg-gray-200 box-border list-none p-0 m-0">
+    <div class="cont min-h-screen flex items-start justify-center">
+        <!--sidebar-->
+        <div class="w-1/4 h-screen  bg-cyan-600 sm:float-right">
+            <div class="logo_cont mt-2 flex w-full justify-start items-center text-white px-2">
+                <img src="./img/Logo.png" alt="logo"/>
+                <h1 class="text-white text-2xl font-bold">Easywire</h1>
+            </div>
+
+            <!--menu icon-->
+            <div class="text-lg text-white px-2 cursor-pointer text-end" id="burger">
+            <span class="w-6"><i class="ri-menu-line"></i></span>
+            </div>
+
+            <!--links-->
+            <div class=" w-full h-auto text-white hidden md:block" id="menu">
+
+                <div class="links flex items-center justify-start text-white font-semibold p-4">
+                    <span><i class="ri-home-line"></i></span>
+                    <p class="p-2">Home</p>
+                </div> 
+
+                <div class="links flex items-center justify-start text-white font-semibold p-4">
+                    <span><i class="ri-time-line"></i></span>
+                    <p class="p-2">History</p>
+                </div>
+
+                <div class="links flex items-center justify-start text-white font-semibold p-4">
+                    <span><i class="ri-bank-card-line"></i></span>
+                    <p class="p-2">Cards</p>
+                </div>
+
+                <div class="links flex items-center justify-start text-white font-semibold p-4">
+                    <span><i class="ri-group-2-fill"></i></span>
+                    <p class="p-2">Recipients</p>
+                </div>
+
+                <div class="links flex items-center justify-start text-white font-semibold p-4">
+                    <span><i class="ri-message-2-fill"></i></span>
+                    <p class="p-2">Reports</p>
+                </div>
+                <div class="links flex items-center justify-start text-white font-semibold p-4">
+
+                    <span><i class="ri-settings-2-line"></i></span>
+                    <p class="p-2">Settings</p>
+                </div>
+                <div class="links flex items-center justify-start text-white font-semibold p-4">
+
+                    <span><i class="ri-question-fill"></i></span>
+                    <p class="p-2">Help</p>
+                </div>
+                <div class="links flex items-center justify-start text-white font-semibold p-4">
+
+                    <span><i class="ri-mail-forbid-fill"></i></span>
+                    <p class="p-2">Privacy</p>
+                </div>
+            </div>
+        
+        </div>
+        <!--main view-->
+        <section class="main flex-1 h-screen justify-center ">
+            <nav class="nav bg-white h-16 flex justify-between border-b">
+                <div class="search text-gray-400 p-5 py-2 flex ">
+                    <p><span><i class="ri-search-line"></i></span></p>
+                <p>Search</p></div>
+
+                <div class="profile py-9 px-9 flex items-center h-auto w-full justify-end">
+                    <p><span><i class="ri-notification-line"></i></span></p>
+                    <div class="profile_img  w-12 h-12 p-2">
+                     <img src="./img/Profile pic.png" alt="profile pic"/>
+                    </div>
+                    <p class="font-semibold">Koinonia</p>
+                </div>
+            </nav>
+            
+            <!--profile-->
+            <section  class="profile_cont flex justify-between bg-white shadow-sm">
+                <!-- left child -->
+                <div class="profile p-2 flex">
+                    <div>
+                        <img class="profile_img" src="./img/Profile pic.png" alt="profile pic"/>
+                    </div>
+                    <div>
+                        <h3 class="font-extrabold px-2">Good morning, Koinonia</h3>
+                        <div class="flex">
+                            <p class="font-semibold"> <span><i class="ri-bank-card-line px-2"></i></span>Duke Street Studio</p>
+                            <p class="font-semibold"> <span><i class="ri-checkbox-circle-fill px-2 text-green-400"></i></span>verified account</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- right child -->
+                <div class="sm:justify-center :button_cont h-2 p-4">
+                    <button class="btn add font-bold py-2 px-4 rounded  border border-gray-400">Add money</button>
+                    <button class="btn send text-white font-bold py-2 px-4 rounded bg-sky-500 hover:bg-sky-700">send money</button>
+                </div>
+
+
+
+            </section>
+            <!--overview-->
+            <h3 class="font-semibold px-8">Overview</h3>
+            <section class="overview_cont sm:justify-center, grid-cols-3, md:flex justify-between m-1 px-4">
+                <!--left column-->
+            <div class="balance box-border h-30 w-80 shadow-md m-4 bg-white rounded-md">
+                <div>
+                    <p class="text-gray-400 px-4"> <span><i class="ri-scales-line">Account balance</i></span></p>
+                    <p class="font-semibold px-4">$34,000</p>
+                    <div class="h6 mt-6 px-4 text-sky-500 bg-gray-100"><h6>view all</h6></div>
+                </div>
+            </div>
+<!-- middle column -->
+          <div class="pending box-border h-30 w-80 shadow-md m-4 bg-white rounded-md">
+            <div>
+                <p class="text-gray-400  px-4"><span><i class="ri-refresh-line">Pending</i></span></p>
+                <p class="font-semibold  px-4">$34,000</p>
+                <div class="h6 mt-6  px-4 text-sky-500 bg-gray-100"><h6>view all</h6></div>
+            </div>
+         </div>
+         <!-- right column -->
+         <div class="processed box-border h-30 w-80 shadow-md m-4 bg-white rounded-md">
+            <div>
+                <p class="text-gray-400  px-4"><span><i class="ri-check-double-line">Processed</i></span></p>
+                <p class="font-semibold  px-4">$34,000</p>
+                <div class="h6 mt-6  px-4 text-sky-500 bg-gray-100"><h6>view all</h6></div>
+            </div>
+         </div>
+        </section>
+          
+      <section >
+        <h3 class="font-semibold px-8">Recent activity</h3>
+        <div class="table w-full px-8">
+            <table class="w-full">
+                <thead class="bg-gray-100 border-b-2  border-gray-200 text-gray-500">
+                    <tr>
+                        <th class="w-32 p-3 text-sm font-semibold tracking-wide text-left">TRANSACTION</th>
+                        <th class="w-32 p-3 text-sm font-semibold tracking-wide text-left">AMOUNT</th>
+                        <th class="w-32 p-3 text-sm font-semibold tracking-wide text-left">STATUS</th>
+                        <th class="w-24 p-3 text-sm font-semibold tracking-wide text-left">DATE</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <tr class="bg-white border-b-gray-200">
+                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap"><i class="px-2 ri-money-pound-box-fill"></i>Payment to Molly Sanders</td>
+                        <td class="p-3 text-sm text-black font-semibold whitespace-nowrap">$20,000 USD</td>
+                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap">
+                            <span class="p-1.5 text-xs font-medium tracking-wider text-green-800 bg-green-200 rounded-2xl bg-opacity-50">Success</span></td>
+                        <td class="p-3 text-sm text-black font-semibold whitespace-nowrap">July 11, 2022</td>
+                    </tr>
+                    <tr class="bg-white border-b-gray-200">
+                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap"> <i class="px-2 ri-money-pound-box-fill"></i>Payment to Oyin Esther</td>
+                        <td class="p-3 text-sm text-black font-semibold whitespace-nowrap">$105,000 USD</td>
+                        <td class="">
+                            <span class="p-1.5 text-xs font-medium tracking-wider text-orange-800 bg-orange-200 rounded-2xl bg-opacity-50">Processing</span></td>
+                        <td class="p-3 text-sm text-black font-semibold whitespace-nowrap">July 11, 2022</td>
+                    </tr>
+                    <tr class="bg-white border-b-gray-200">
+                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap"> <i class="px-2 ri-money-pound-box-fill"></i>Payment to Mikel Fash</td>
+                        <td class="p-3 text-sm  text-black font-semibold  whitespace-nowrap">$90,000 USD</td>
+                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap">
+                            <span class="p-1.5 text-xs font-medium tracking-wider text-green-800 bg-green-200 rounded-2xl bg-opacity-50">Success</span></td>
+                        <td class="p-3 text-sm  text-black font-semibold whitespace-nowrap">July 11, 2022</td>
+                    </tr>
+                    <tr class="bg-white border-b-gray-200">
+                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap"> <i class="px-2 ri-money-pound-box-fill"></i>Payment to Lanre Adex</td>
+                        <td class="p-3 text-sm  text-black font-semibold whitespace-nowrap">$25,000 USD</td>
+                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap">
+                            <span class="p-1.5 text-xs font-medium tracking-wider text-green-800 bg-green-200 rounded-2xl bg-opacity-50">Success</span></td>
+                        <td class="p-3 text-sm  text-black font-semibold whitespace-nowrap">July 11, 2022</td>
+                    </tr>
+                    <tr class="bg-white border-b-gray-200">
+                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap"> <i class="px-2 ri-money-pound-box-fill"></i>Payment to Molly Saps</td>
+                        <td class="p-3 text-sm  text-black font-semibold whitespace-nowrap">$20,000 USD</td>
+                        <td class="p-3 text-sm text-gray-500  whitespace-nowrap">
+                            <span class="p-1.5 text-xs font-medium tracking-wider text-gray-800 bg-gray-200 rounded-2xl bg-opacity-50">Failed</span></td>
+                        <td class="p-3 text-sm  text-black font-semibold  whitespace-nowrap">July 11, 2022</td>
+                    </tr>
+                    <tr class="bg-white border-b-gray-200">
+                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap"> <i class=" px-2 ri-money-pound-box-fill"></i>Payment to Molly Sanders</td>
+                        <td class="p-3 text-sm  text-black font-semibold whitespace-nowrap">$5,000 USD</td>
+                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap">
+                            <span class="p-1.5 text-xs font-medium tracking-wider text-orange-800 bg-orange-200 rounded-2xl bg-opacity-50">Processing</span></td>
+                        <td class="p-3 text-sm  text-black font-semibold whitespace-nowrap">July 11, 2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section> 
+        </section>
+    
+        
+    </div>
+    
+    <script src="index.js"></script>
+    
+</body>
+
+</html>
